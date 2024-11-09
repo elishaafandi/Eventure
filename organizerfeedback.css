@@ -1,0 +1,228 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body and Main Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Main Content Styling for Feedback Page */
+.main-content {
+    margin-left: 220px; /* Sidebar spacing */
+    margin-top: 10px; /* Adjust to match header height */
+    padding: 20px;
+    width: calc(100% - 220px); /* Keeping space for sidebar */
+}
+
+/* Feedback Section */
+.feedback-list {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.feedback-list h2 {
+    color: #800c12;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feedback-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.feedback-item:last-child {
+    border-bottom: none; /* Remove bottom border on the last item */
+}
+
+.feedback-item p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.feedback-item strong {
+    color: #800c12;
+}
+
+.feedback-item em {
+    color: #555;
+}
+
+.feedback-item .rating {
+    font-weight: bold;
+}
+
+/* Crew/Participant Feedback Section */
+.crew-feedback-section {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.crew-feedback-section h3 {
+    color: #800c12;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+.feedback-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+    border-color: #a62b2b;
+}
+
+.feedback-form button {
+    background-color: #a62b2b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedback-form button:hover {
+    background-color: #e08500;
+}
+
+/* Feedback message section */
+.feedback-message-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.feedback-message-section h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Pill Button Styling */
+.pill-feedback {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #a62b2b; /* Dark red background */
+    color: #fff;
+    border-radius: 20px; /* Rounded edges for pill shape */
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.pill-feedback:hover {
+    background-color: #e08500; /* Slightly lighter color on hover */
+    color: #fff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+/* Dropdown and Button Styles for Feedback */
+.feedback-role-dropdown {
+    background-color: #da6124;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.add-feedback-button {
+    background-color: #da6124;
+    color: white;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.add-feedback-button:hover {
+    background-color: #e08500;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Empty State Message for Feedback */
+.no-feedback-message {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    .feedback-list,
+    .crew-feedback-section {
+        padding: 15px;
+    }
+
+    .feedback-item {
+        padding: 10px;
+    }
+
+    .pill-feedback {
+        width: 100%;
+        text-align: center;
+    }
+}
